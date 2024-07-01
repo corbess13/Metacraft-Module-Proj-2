@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Contract Interaction</title>
+</head>
+<body>
+    <h1>Simple Contract Interaction</h1>
+    <div>
+        <label for="valueInput">Set Value:</label>
+        <input type="number" id="valueInput">
+        <button onclick="setValue()">Set Value</button>
+    </div>
+    <div>
+        <button onclick="getValue()">Get Value</button>
+        <p id="valueDisplay">Value: </p>
+    </div>
+    <div>
+        <button onclick="incrementValue()">Increment Value</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.3.0/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
