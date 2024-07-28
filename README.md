@@ -12,7 +12,7 @@ This project demonstrates Smart Contract Frontend Integration with Vite + React 
 
 ### Executing the program
 
-1. Open https://gitpod.io/#https://github.com/corbess13/ETH-AVAX-Module-2-Project and create a Gitpod workspace.
+1. Open https://gitpod.io/#https://github.com/corbess13/Metacraft-Module-Proj-2 and create a Gitpod workspace.
 2. Wait for npm to install the modules. (If the installation did not start automatically, enter `npm install` on the terminal)
 3. Create 2 terminal instances. They will be used later on.
 4. On the 1st terminal instance, enter `npx hardhat node` on the terminal to start your Hardhat node. Make sure to open the port to public.
