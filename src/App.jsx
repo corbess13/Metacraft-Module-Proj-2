@@ -44,16 +44,16 @@ function App() {
     }
   };
 
-  const add = async (num1, num2) => {
+  const multiply = async (num1, num2) => {
     if (!contract) return;
-    let tx = await contract.add(num1, num2);
+    let tx = await contract.multiply(num1, num2);
     await tx.wait();
     updateResult();
   };
 
-  const subtract = async (num1, num2) => {
+  const divide = async (num1, num2) => {
     if (!contract) return;
-    let tx = await contract.subtract(num1, num2);
+    let tx = await contract.divide(num1, num2);
     await tx.wait();
     updateResult();
   };
@@ -97,17 +97,17 @@ function App() {
           <div className="flex justify-center gap-3">
             <Button
               variant="contained"
-              onClick={() => add(num1, num2)}
+              onClick={() => multiply(num1, num2)}
               className="w-full"
             >
-              Add
+              Multiply
             </Button>
             <Button
               variant="contained"
-              onClick={() => subtract(num1, num2)}
+              onClick={() => divide(num1, num2)}
               className="w-full"
             >
-              Subtract
+              Divide
             </Button>
           </div>
           <Button variant="contained" onClick={connectWallet}>
